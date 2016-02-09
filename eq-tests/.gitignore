@@ -1,0 +1,69 @@
+*.py[cod]
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+
+.cache
+
+*.log
+
+
+# Sphinx
+docs/_build
+
+.webassets-cache
+
+# Virtualenvs
+env
+env*
+venv
+
+# intellij
+.idea/
+*.ipr
+*.iml
+*.iws
+
+.DS_Store
+
+# node
+node_modules/
+static/
+tests/results
+tests/coverage
+
+app/templates/patterns/components/icons.html
+app/styles/base/_sprite.scss
+
+## OS X
+._*
+.Spotlight-V100
+.Trashes
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+Status API Training Shop Blog About Pricing
