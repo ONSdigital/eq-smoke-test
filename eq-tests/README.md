@@ -73,7 +73,7 @@ Congratulations!  If you now hate Ruby as much as I do, you're on the right trac
 Now that you've done all that, you can now start building the smoke test
 
 
-1) Download all the appropriate dependencies
+1) Download all the appropriate dependencies by using
 
 ```
 bundle install
