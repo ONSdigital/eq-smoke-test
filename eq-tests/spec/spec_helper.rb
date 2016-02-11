@@ -6,7 +6,7 @@ Infrataster::Server.define(
 )
 
 Infrataster::Server.define(
-    :rabbi,
+    :rabbit,
     ENV["EQ_RABBITMQ"]
 )
 
