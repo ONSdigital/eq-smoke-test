@@ -2,12 +2,12 @@ require 'infrataster/rspec'
 
 Infrataster::Server.define(
     :runner,
-    ENV["SURVEYRUNNER"]
+    ENV["EQ_SURVEYRUNNER"]
 )
 
 Infrataster::Server.define(
-    :runner,
-    ENV["RABBITMQ"]
+    :rabbi,
+    ENV["EQ_RABBITMQ"]
 )
 
 RSpec.configure do |config|
