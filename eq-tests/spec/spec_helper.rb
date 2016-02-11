@@ -2,8 +2,12 @@ require 'infrataster/rspec'
 
 Infrataster::Server.define(
     :runner,
-    'infrataster-surveys.eq.ons.digital/',
-    vagrant: true,
+    ENV["SURVEYRUNNER"]
+)
+
+Infrataster::Server.define(
+    :runner,
+    ENV["RABBITMQ"]
 )
 
 RSpec.configure do |config|
