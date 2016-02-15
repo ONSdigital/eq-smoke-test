@@ -9,16 +9,7 @@ describe server(:runner) do
             expect(response.headers['content-type']).to eq("application/json")
         end
         it "Rabbitmq connection availability test" do
-            expect(response_body["status"]).to include('success')
-        end
-    end
-
-    describe http('http://runner/healthcheck/send_test') do
-        it "Rabbitmq health check test" do
-            expect(response.headers['content-type']).to eq("text/html")
-        end
-        it "Rabbitmq functionality test" do
-             expect(response.body).to include('OK')
+            expect(response_body["status"]).to include('passing')
         end
     end
 
