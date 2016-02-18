@@ -68,8 +68,6 @@ bundle -v       # Should be 1.10.6
 gem -v          # Should be 2.5.2
 ```
 
-Congratulations!  If you now hate Ruby as much as I do, you're on the right track
-
 Now that you've done all that, you can now start building the smoke test
 
 
@@ -87,4 +85,4 @@ export EQ_SURVEYRUNNER='survey runner location'
 
 ```
 bundle exec rspec
-'''
+```
