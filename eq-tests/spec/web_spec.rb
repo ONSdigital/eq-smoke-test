@@ -1,5 +1,6 @@
 # spec/example_spec.rb
 require 'spec_helper'
+require 'json'
 
 describe server(:runner) do
 
@@ -8,19 +9,13 @@ describe server(:runner) do
             expect(response.headers['content-type']).to eq("application/json")
         end
         it "Rabbitmq connection availability test" do
-             expect(response.body).to include('rabbitmq_available')
+            expect(response_body["status"]).to include('success')
         end
     end
 
-    describe http('http://rabbit/healthcheck/send_test') do
-        it "Rabbitmq health check test" do
-            expect(response.headers['content-type']).to eq("text/html")
-        end
-        it "Rabbitmq functionality test" do
-             expect(response.body).to include('OK')
-        end
+    def response_body
+        JSON.parse(response.body)
     end
 
 end
-
 

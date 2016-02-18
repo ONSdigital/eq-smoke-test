@@ -60,32 +60,18 @@ gem install bundler -v 1.10.6
 gem update --system '2.5.2'
 ```
 
-6) Check your version
-
-```
-ruby -v         # Should be 2.2.3
-bundle -v       # Should be 1.10.6
-gem -v          # Should be 2.5.2
-```
-
-Congratulations!  If you now hate Ruby as much as I do, you're on the right track
-
-Now that you've done all that, you can now start building the smoke test
-
-
 1) Download all the appropriate dependencies by using
 
 ```
 bundle install
 ```
-2) Set environment variables for Survey URL and Rabbit URL
+2) Set environment variables for Survey URL
 
 ```
-export EQ_RABBITMQ='rabbitmq location'
-export EQ_SURVEYRUNNER='survey runner location'
+export EQ_SURVEYRUNNER='preprod-surveys.eq.ons.digital'
 
 3) Run the smoke test
 
 ```
 bundle exec rspec
-'''
+```
