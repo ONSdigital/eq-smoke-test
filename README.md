@@ -78,10 +78,9 @@ Now that you've done all that, you can now start building the smoke test
 ```
 bundle install
 ```
-2) Set environment variables for Survey URL and Rabbit URL
+2) Set environment variables for Survey URL
 
 ```
-export EQ_RABBITMQ='rabbitmq location'
 export EQ_SURVEYRUNNER='survey runner location'
 
 3) Run the smoke test
