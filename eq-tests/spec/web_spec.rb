@@ -9,7 +9,7 @@ describe server(:runner) do
             expect(response.headers['content-type']).to eq("application/json")
         end
         it "Rabbitmq connection availability test" do
-            expect(response_body["status"]).to include('passing')
+            expect(response_body["status"]).to include('success')
         end
     end
 
