@@ -86,6 +86,3 @@ DEPENDENCIES
   pry
   pry-byebug
   pry-rescue
-
-BUNDLED WITH
-   1.10.6

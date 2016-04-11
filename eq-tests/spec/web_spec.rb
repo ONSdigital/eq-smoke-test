@@ -4,7 +4,7 @@ require 'json'
 
 describe server(:runner) do
 
-    describe http('http://runner/healthcheck') do
+    describe http('https://runner/healthcheck') do
         it "Survey runner health check test" do
             expect(response.headers['content-type']).to eq("application/json")
         end
